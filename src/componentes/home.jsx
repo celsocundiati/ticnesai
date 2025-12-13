@@ -66,7 +66,7 @@ function Header() {
           ))}
         </nav>
 
-        <button className="hidden md:inline-flex rounded-xl bg-indigo-600 px-5 py-2 text-sm font-semibold hover:bg-indigo-500 transition">
+        <button className="cursor-pointer hidden md:inline-flex rounded-xl bg-indigo-600 px-5 py-2 text-sm font-semibold hover:bg-indigo-500 transition">
           Falar Connosco
         </button>
 
@@ -176,7 +176,7 @@ export default function Home() {
         </section>
 
         {/* STATS */}
-        <section className="py-20 px-6">
+        <section id="servicos" className="py-20 px-6">
           <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-3 text-center">
             {stats.map((stat, index) => (
               <motion.div
@@ -291,6 +291,107 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
+
+        {/* INSTITUCIONAL */}
+        <section id="sobre" className="py-24 px-6 bg-white/5">
+        <div className="max-w-6xl mx-auto text-center">
+            <motion.h2
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-3xl md:text-4xl font-bold"
+            >
+            Quem Somos
+            </motion.h2>
+
+            <motion.p
+            variants={fadeUp}
+            custom={1}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="mt-6 max-w-3xl mx-auto text-slate-300"
+            >
+            A TICNES AI é uma empresa focada no desenvolvimento de soluções inteligentes
+            que impulsionam eficiência, inovação e crescimento sustentável.
+            </motion.p>
+
+            <div className="mt-16 grid gap-10 md:grid-cols-4">
+            {[
+                {
+                title: "Missão",
+                desc: "Transformar dados em decisões estratégicas através de inteligência artificial aplicada ao negócio.",
+                },
+                {
+                title: "Visão",
+                desc: "Ser referência em soluções de IA em África, impulsionando empresas para o futuro digital.",
+                },
+                {
+                title: "Valores",
+                desc: "Inovação, ética, excelência técnica, foco em resultados e parceria com o cliente.",
+                },
+                {
+                title: "Objetivo",
+                desc: "Ajudar empresas a escalar com tecnologia inteligente, segura e orientada por dados.",
+                },
+            ].map((item, index) => (
+                <motion.div
+                key={item.title}
+                variants={fadeUp}
+                custom={index}
+                className="rounded-3xl border border-white/10 bg-white/10 p-8 backdrop-blur"
+                >
+                <h3 className="text-xl font-semibold text-indigo-400">
+                    {item.title}
+                </h3>
+                <p className="mt-4 text-slate-300">{item.desc}</p>
+                </motion.div>
+            ))}
+            </div>
+        </div>
+        </section>
+
+        <footer id="contacto" className="border-t border-white/10 bg-slate-950 px-6 py-12">
+            <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
+                <div>
+                <h3 className="text-xl font-bold text-white">
+                    TICNES<span className="text-indigo-500">.AI</span>
+                </h3>
+                <p className="mt-4 text-slate-400 text-sm">
+                    Transformando negócios através da inteligência artificial. 
+                    Soluções inovadoras para empresas em Angola e no mundo.
+                </p>
+                </div>
+
+                <div>
+                <h4 className="font-semibold text-white mb-4">Navegação</h4>
+                <ul className="space-y-2 text-slate-400 text-sm">
+                    <li><a href="#home" className="hover:text-white">Início</a></li>
+                    <li><a href="#sobre" className="hover:text-white">Sobre</a></li>
+                    <li><a href="#servicos" className="hover:text-white">Serviços</a></li>
+                    <li><a href="#contacto" className="hover:text-white">Contacto</a></li>
+                </ul>
+                </div>
+
+                <div>
+                <h4 className="font-semibold text-white mb-4">Contacto</h4>
+                <p className="text-slate-400 text-sm">
+                    Email: info@ticnes.ai 
+                    <br />
+                    +244 953 186 182 
+                    <br />
+                    Talatona, Rua 84, 752, Urb-Patriota. Luanda-Angola.
+                    <br />
+                    Angola · África
+                </p>
+                </div>
+            </div>
+
+            <div className="mt-10 text-center text-slate-500 text-sm">
+                © {new Date().getFullYear()} TICNES AI. Todos os direitos reservados.
+            </div>
+        </footer>
       </main>
     </>
   );
