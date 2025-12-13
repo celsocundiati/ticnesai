@@ -39,9 +39,9 @@ const fadeUp = {
 
 const navLinks = [
   { label: "Início", href: "#home" },
-  { label: "Sobre", href: "#sobre" },
   { label: "Serviços", href: "#servicos" },
   { label: "Contacto", href: "#contacto" },
+  { label: "Sobre", href: "#sobre" },
 ];
 
 function Header() {
