@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ArrowRight, Cpu, BarChart3, Sparkles } from "lucide-react";
+import Projectos from "./projectos/projectos";
 
 const heroData = {
   title: "Inteligência Artificial ao serviço da inovação",
@@ -132,7 +133,7 @@ export default function Home() {
 
       <main
         id="home"
-        className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white"
+        className="bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 text-white"
       >
         {/* HERO */}
         <section className="relative min-h-screen flex items-center justify-center px-6 pt-32">
@@ -223,6 +224,8 @@ export default function Home() {
           </div>
         </section>
 
+        <Projectos/>
+
         {/* PROCESS */}
         <section className="py-24 px-6 bg-white/5">
           <div className="max-w-6xl mx-auto">
@@ -255,7 +258,7 @@ export default function Home() {
         </section>
 
         {/* CALL TO ACTION */}
-        <section className="py-24 px-6 bg-gradient-to-r from-indigo-600/20 to-purple-600/20">
+        <section className="py-24 px-6 bg-linear-to-r from-indigo-600/20 to-purple-600/20">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h2
               variants={fadeUp}
