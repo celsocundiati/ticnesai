@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ArrowRight, Cpu, BarChart3, Sparkles } from "lucide-react";
 import Projectos from "./projectos/projectos";
+import TrabalhosEstagio from "./projectos/trabalhos";
 
 const heroData = {
   title: "Inteligência Artificial ao serviço da inovação",
@@ -224,7 +225,37 @@ export default function Home() {
           </div>
         </section>
 
-        <Projectos/>
+        <section className="py-24 px-6 bg-indigo-300/25">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className=""
+            >
+              
+              <Projectos/>
+
+            </motion.div>
+          </div>
+        </section>
+
+
+        <section className="py-24 px-6">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className=""
+            >
+                  
+            {/* Trabalhos do estágio */}
+            <TrabalhosEstagio/>
+
+            </motion.div>
+          </div>
+        </section>
 
         {/* PROCESS */}
         <section className="py-24 px-6 bg-white/5">

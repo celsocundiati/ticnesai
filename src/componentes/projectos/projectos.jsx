@@ -7,21 +7,20 @@ function Projectos() {
     const projectos = [
         {
             id: 1,
-            titulo: "WEATHER FORECAST",
-            desc: "Um aplicativo da web que exibe as condições meteorológicas atuais e previsões de 5 dias usando dados de API em tempo real",
-            imagem:
-                "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
-            linkSite: "https://previsaodotempocs.vercel.app/",
-            linkGit: "https://github.com/celsocundiati/previsao_do_tempo",
+            titulo: "Algoritmo de autoavaliação",
+            desc: "Aplicação web focada em autoavaliação inteligente, permitindo ao utilizador analisar o seu desempenho por meio de critérios definidos, feedback automático e visualização clara de resultados.",
+            imagem: "https://cdn-icons-png.flaticon.com/512/1828/1828640.png",
+            linkSite: "https://avaliacaocs22.vercel.app/",
+            linkGit: "https://github.com/celsocundiati/avaliacao",
         },
         {
             id: 2,
-            titulo: "QUIZ APP",
-            desc: "Um aplicativo de teste interativo com várias categorias, pontuações e feedback em tempo real.",
+            titulo: "Portfólio de Celso cundiati",
+            desc: "Portfólio interativo que apresenta projetos, trabalhos e conquistas, com navegação intuitiva e feedback visual em tempo real.",
             imagem:
-                "https://cdn-icons-png.flaticon.com/512/1048/1048953.png",
-            linkSite: "https://quizcs.vercel.app/",
-            linkGit: "https://github.com/celsocundiati/quiz-react",
+                "https://res.cloudinary.com/degsmhalt/image/upload/v1761481551/IMG-20240915-WA0036_wqoae1.jpg" ,
+            linkSite: "https://portfoliocelso.vercel.app/",
+            linkGit: "https://github.com/celsocundiati/meu-portfolio",
         },
         {
             id: 3,
