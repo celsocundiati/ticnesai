@@ -24,12 +24,12 @@ function Projectos() {
         },
         {
             id: 3,
-            titulo: "TASK LIST",
-            desc: "Um aplicativo da web de gerenciamento de tarefas para criar, editar e rastrear suas tarefas diárias com eficiência.",
+            titulo: "TICNES AI",
+            desc: "Um aplicativo web de gerenciamento e apresentação do site da Ticnes AI",
             imagem:
                 "https://cdn-icons-png.flaticon.com/512/9068/9068643.png", // imagemm ilustrativa
-            linkSite: "https://listadetarefascs.vercel.app/",
-            linkGit: "https://github.com/celsocundiati/ListaDeMercado_Reactjs",
+            linkSite: "https://a18cdbe4.ticnesai01.pages.dev/",
+            linkGit: "https://github.com/celsocundiati/ticnesai",
         },
         {
             id: 4,
