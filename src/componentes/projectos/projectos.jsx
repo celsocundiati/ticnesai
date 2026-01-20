@@ -34,11 +34,11 @@ function Projectos() {
         {
             id: 4,
             titulo: "TWINDER",
-            desc: "A live Geolocation app for finding tweets and twitter users around you.",
+            desc: "Algoritmo de expansão da Ticnes AI.",
             imagem:
                 "https://cdn-icons-png.flaticon.com/512/854/854878.png",
-            linkSite: "https://quizcs.vercel.app/",
-            linkGit: "https://github.com/celsocundiati/quiz-react",
+            linkSite: "https://expansaoticnesai.vercel.app/",
+            linkGit: "https://github.com/celsocundiati/expansaoticnesai",
         },
         {
             id: 5,
