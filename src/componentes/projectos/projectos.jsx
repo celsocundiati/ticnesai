@@ -33,7 +33,7 @@ function Projectos() {
         },
         {
             id: 4,
-            titulo: "TWINDER",
+            titulo: "Algoritmo de Expansão dos centros da Ticnes AI",
             desc: "Algoritmo de expansão da Ticnes AI.",
             imagem:
                 "https://cdn-icons-png.flaticon.com/512/854/854878.png",
@@ -42,12 +42,12 @@ function Projectos() {
         },
         {
             id: 5,
-            titulo: "LIVENTS",
-            desc: "A video streaming app with live Geolocation, for streaming events.",
+            titulo: "AppStore Ticnes AI",
+            desc: "Plataforma de publicação e vendas de aplicações Ticnes AI",
             imagem:
                 "https://cdn-icons-png.flaticon.com/512/4211/4211803.png",
-            linkSite: "https://previsaodotempocs.vercel.app/",
-            linkGit: "https://github.com/celsocundiati/previsao_do_tempo",
+            linkSite: "https://appstoreticnesai.vercel.app",
+            linkGit: "https://github.com/celsocundiati/appstoreticnesai",
         },
         {
             id: 6,
